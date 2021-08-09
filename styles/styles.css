@@ -1,0 +1,328 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.animaker-logo{
+  width: 100%;
+}
+
+.gsk-logo{
+  width: 71%;
+  position: relative;
+  top: -9px;
+}
+
+main .content{
+  padding: 25px;
+}
+
+main .content p{
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: hsl(242deg 13% 39%);
+}
+
+main .heading{
+  text-align: center;
+}
+
+.card-button{
+  border: 1px solid hsl(0deg 0% 92%);
+  bottom: 20px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #ff54b0 0%, #faca8c 100%) 0% 0%;
+  color: hsl(256deg 9% 50%);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  position: absolute;
+  width: 200px;
+  transform: translatex(-50%);
+  transition: 0.5s;
+}
+
+.card-button:before {
+	position: absolute;
+	content:"";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;	
+  transition: 0.5s;
+
+}
+
+.card-button:hover {
+  box-shadow: 5px 5px rgb(255 232 148), -5px -5px rgb(243 178 220);
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.topnav {
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: height 1s ease;
+    height: 50px;
+  }
+  
+  .topnav a {
+    width: 10%;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .icon {
+    color: grey;
+    display: none;
+  }
+
+  .topnav .faq{
+      margin-left: auto;
+      color: hsl(243deg 9% 47%);
+      font-weight: 500;
+  }
+
+  .plans{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200PX, 1fr));
+      grid-gap: 27px;
+      margin: 3%;
+  }
+
+  .plan-details{
+    padding: 16px;
+    position: relative;
+    border-radius: 4px;
+    height: 52%;
+    width: 87%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 12%), 0 6px 20px 0 rgb(0 0 0 / 12%);
+    text-align: center;
+  }
+
+  .plan-details h2{
+    padding-left: 8px;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+  }
+
+  .plan-details.card1{
+    border-top: 11px solid hsl(116deg 68% 64%);
+  }
+  
+  .plan-details.card2{
+    border-top: 11px solid hsl(46deg 100% 50%);
+  }
+  
+  .plan-details.card3{
+    border-top: 11px solid hsl(268deg 100% 84%);
+  }
+  
+  .plan-details.card4{
+    border-top: 11px solid hsl(354deg 70% 52%);
+  }
+
+  .card-icon{
+    font-size: 1.5rem;
+  }
+
+  sup{
+    font-size: 1.2rem;
+  }
+
+  .superfix{
+    vertical-align: sub;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .plan-price{
+    font-size: 2rem;
+  }
+
+  .card section{
+    padding: 14%;
+  }
+
+  .fa-check{
+    font-size: 1em; 
+    color: hsl(116deg 66% 70%);
+  }
+
+  .fa-calendar-o{
+    color: hsl(0deg 0% 82%);
+  }
+
+  .card{
+    position: relative;
+    margin-top: 26px;
+  }
+
+  .card .description-text{
+    font-size: 1em;
+    font-weight: 400;
+    color: hsl(0deg 1% 72%);
+    width: 200px;
+    margin: auto;
+  }
+
+  .card section h3{
+    font-size: 1em;
+    font-weight: 500;
+    color: hsl(242deg 12% 40%);
+    text-shadow: 1px 0px hsl(244deg 9% 82%);
+  }
+
+  .card section h3::before{
+    font-family: FontAwesome;
+    display: inline-block;
+    left: 15px;
+    content: "\f00c";
+    color: hsl(116deg 66% 70%);
+    position: absolute;
+  }
+
+  .card4 h1{
+    color: hsl(243deg 9% 48%);
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  .popup{
+    width: 100%;
+    height: 100%;
+    background-color: #000000a1;
+    position: fixed;
+    top: 0;
+    display: none;
+  }
+
+  .popup .container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 41%;
+    padding: 4%;
+    gap: 10px;
+    border-radius: 10px;
+    transform: translate(50%, 30%);
+  }
+
+  .popup h1{
+    text-align: center;
+    color: hsl(240deg 11% 40%);
+  }
+
+  .popup .button{
+    border: 1px solid hsl(0deg 0% 92%);
+    bottom: 20px;
+    border-radius: 3px;
+    background: linear-gradient(
+90deg
+, #ff54b0 0%, #faca8c 100%) 0% 0%;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .popup input{
+    padding: 10px;
+  }
+
+  .popup label{
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(240deg 7% 55%);
+  }
+
+  .popup label:after {
+    content:" *";
+    color: red;
+  }
+
+  .container i{
+    float: right;
+    cursor: pointer;
+  }
+
+  .chat-icon{
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 9%;
+    filter: drop-shadow(4px 4px 3px rgba(50, 50, 0, 0.3));
+  }
+
+  @media screen and (max-width: 1024px) {
+    .card section h3::before{
+      left: 8px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .animaker-logo{
+      width: 76%;
+    }
+
+    .chat-icon{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      left: 34%;
+      top: 0;
+      position: relative;
+      float: right;
+      display: block;
+    }
+
+    .animaker-logo.responsive{
+      width: 32%;
+    }
+
+    .gsk-logo {
+      width: 29%;
+    }
+
+    .topnav a{
+      width: 100%;
+    }
+    .topnav.responsive {
+      position: relative;
+      flex-direction: column;
+      background-color: #ebeaea;
+      height: 200px;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      left: 84%;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  @keyframes slide
+  {
+    from {height: 0;}
+    to {height: 200px;}
+  }

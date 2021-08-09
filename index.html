@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Animaker Assignment</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!--Nav bar menu-->
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="#home"
+          ><img
+            id="animaker-logo"
+            class="animaker-logo"
+            src="./assets/animakerlogo.svg"
+            alt="animaker-logo"
+        /></a>
+        <a href="#gsk"
+          ><img class="gsk-logo" src="./assets/gsk-logo.png" alt="gsk-logo"
+        /></a>
+        <a href="#faq" class="faq">FAQ</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <!--Main container-->
+    <main>
+      <section class="content">
+        <h1>GSK animation tool</h1>
+        <p>
+          The GSK Animation tool has been created so that anyone can create cost
+          effictive character animations in the GSK style with no experience.
+          We've created this tool with the Content and Visual identity team
+          using GSK's own character style, so the animation that you create, are
+          brand aligned for use internally and externally.
+        </p>
+      </section>
+      <section>
+        <h1 class="heading">Choose your plan</h1>
+        <div class="plans">
+          <div class="card">
+            <div class="plan-details card1">
+              <h2 class="heading1">Temporary use License</h2>
+              <i class="fa fa-clock-o card-icon" aria-hidden="true"></i>
+              <h1>Temporary use License</h1>
+              <h3 class="description-text">
+                4 weeks access(subject to availability)
+              </h3>
+              <button
+                id="1"
+                class="card-button"
+                onclick="displayPopup(this.id)"
+              >
+                Request Access
+              </button>
+            </div>
+            <section>
+              <h3>Full access to the tool for 4 weeks</h3>
+              <h3>Zero cost</h3>
+              <h3>Infrequent or one off use</h3>
+              <h3>Can wait for a license to be available</h3>
+              <h3>Projects of 4 week or less</h3>
+            </section>
+          </div>
+          <div class="card">
+            <div class="plan-details card2">
+              <h2 class="heading2">Pay-per-month</h2>
+              <i class="fa fa-calendar-o card-icon" aria-hidden="true"></i>
+              <h1 class="plan-price">
+                <sup>£</sup>80<sup class="superfix">/month</sup>
+              </h1>
+              <h3 class="description-text">1 month unlimited access</h3>
+              <button
+                id="2"
+                class="card-button"
+                onclick="displayPopup(this.id)"
+              >
+                Start Now
+              </button>
+            </div>
+            <section>
+              <h3>Full access to the tool for 1 monthly cost</h3>
+              <h3>No need to wait for temporary license to become available</h3>
+              <h3>Use the tool less than 8 months per year</h3>
+            </section>
+          </div>
+          <div class="card">
+            <div class="plan-details card3">
+              <h2 class="heading3">Pay-per-year</h2>
+              <i class="fa fa-calendar-o card-icon" aria-hidden="true"></i>
+              <h1 class="plan-price">
+                <sup>£</sup>720<sup class="superfix">/year</sup>
+              </h1>
+              <h3 class="description-text">1 year unlimited access</h3>
+              <button
+                id="3"
+                class="card-button"
+                onclick="displayPopup(this.id)"
+              >
+                Start Now
+              </button>
+            </div>
+            <section>
+              <h3>Full access to the tool for 1 monthly</h3>
+              <h3>Are going to be creating animations for at least 1 year</h3>
+              <h3>Are using the tool for 8 months or more per year</h3>
+            </section>
+          </div>
+          <div class="card">
+            <div class="plan-details card4">
+              <h2 class="heading4">Set-up a team</h2>
+              <i class="fa fa-users card-icon" aria-hidden="true"></i>
+              <h1>Looking to set up more than one person?</h1>
+              <button
+                id="4"
+                class="card-button"
+                onclick="displayPopup(this.id)"
+              >
+                Contact Us
+              </button>
+            </div>
+            <section>
+              <h3>Questions</h3>
+              <h3>Schedule a 1:1 training</h3>
+              <h3>
+                Register for the weekly Thurs 2:00pm UK "brown bag" Free
+                training
+              </h3>
+              <h3>Best Practices</h3>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Popup screen-->
+    <section id="popupscreen" class="popup">
+      <form name="popup" onsubmit="return displayPopup()">
+        <div class="container">
+          <span onclick="displayPopup()"
+            ><i class="fa fa-times" aria-hidden="true"></i
+          ></span>
+          <h1>Enterprise Plan</h1>
+          <label for="email">Email</label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="license">Number of licenses</label>
+          <input id="license" type="text" name="license" required />
+
+          <input class="button" type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+
+    <!--Chat icon-->
+    <img class="chat-icon" src="./assets/chat-icon.png" alt="chat-icon" />
+  </body>
+</html>
